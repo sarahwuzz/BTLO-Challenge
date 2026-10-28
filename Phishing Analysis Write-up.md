@@ -1,13 +1,21 @@
-### This notes contains write-up phishing analysis challenge from Blue Team Labs Online.
+# Phishing Email Analysis – Blue Team Labs Online Write-up
 
-First, we should download the file from BTLO, and open it on phishtool.
+## Executive Summary
+This write-up covers the analysis of a phishing email challenge provided by Blue Team Labs Online (BTLO). The investigation was conducted using **PhishTool** to analyze the email header metadata, rendering, and source structure.
 
-- Question 1 : who is primary recipient of this email?
+---
 
-- Answer : Kinnar1975@yahoo.co.uk
+## Investigation Details
 
-How we found out the answer is Kinnar? if we look at rendered tab, that's clearly this email sent to kinnar,
-but on the left side on phishtool, the details show us that email to johnsmith,
-and also the top row shows on source tab, the email was delivered to johnsmith123@gmail.com
-who is john actually? let me explain this...
+### Question 1: Who is the primary recipient of this email?
+**Answer:** `Kinnar1975@yahoo.co.uk`
+
+### Methodology & Findings
+During the initial investigation, an interesting discrepancy was identified across different sections of PhishTool:
+
+1. **Rendered Tab:** Displays `Kinnar1975@yahoo.co.uk` in the visible `To:` header of the rendered email body.
+2. **Details Pane (PhishTool Left Sidebar):** Lists the recipient as `johnsmith`.
+3. **Source Tab (Raw Email Headers):** The `Delivered-To` header explicitly indicates `johnsmith123@gmail.com`.
+
+### Analysis & Explanation
 
