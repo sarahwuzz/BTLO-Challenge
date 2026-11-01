@@ -35,12 +35,12 @@ The sample provided is a **Bounce Email** (also known as a *Non-Delivery Report*
 In this scenario, from our investigative perspective, **John Smith** is the recipient of the system notification `Delivered-To: johnsmith123@gmail.com`, while **Kinnar** was the **primary target/intended recipient** of the underlying message that failed to deliver.
 
 ### Question 2: What is the subject of this email?
-**Answer:** Undeliverable: Website contact form submission
+**Answer:** `Undeliverable: Website contact form submission`
 
 As shown at the top-right side of the Rendered tab in PhishTool, the email headers explicitly display.
 
 ### Question 3: What is the date and time the email was sent?
-**Answer:** 18 March 2021 04:14
+**Answer:** `18 March 2021 04:14`
 
 This answer was extracted from the Source tab in PhishTool, where the bottom section clearly displays `Sent: 18 March 2021 04:14`.
 
@@ -55,4 +55,21 @@ This answer was extracted from the `X-Originating-IP` header, which reveals the 
 As previously mentioned, BTLO recommended to using `whoisdomaintools` to perform reverse DNS.
 
 ### Question 6: What is the name of the attached file?
-**Answer:** Website contact form submission.eml
+**Answer:** `Website contact form submission.eml`
+
+Use thunderbird to get this answer.
+
+### Question 7: What is the URL found inside the attachment?
+**Answer:** `https://35000usdperwwekpodf.blogspot.sg?p=9swghttps://35000usdperwwekpodf`
+
+As shown at the right side of the rendered tab in phishtool.
+
+### Question 8: What service is this webpage hosted on?
+**Answer:** `blogspot`
+
+Displayed right after the URL.
+
+### Question 9: Using URL2PNG, what is the heading text on this page? (Doesn't matter if the page has been taken down!)
+**Answer:** `Blog has been removed`
+
+## Chain Attack Explanation
