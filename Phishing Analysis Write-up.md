@@ -77,8 +77,7 @@ Displayed right after the URL.
 To understand what actually happened in this case, let's look at the underlying attack chain:
 
 ### 1. Initial access
-- The adversary successfully compromised the blog hosting service website named `markgardner.com`
-- Abusing contact form, leveraging the compromised site, the adversary utilized it's online contact form.
+- Abusing contact form, the adversary utilized it's online contact form.
 
 What evidence support this findings?
 
