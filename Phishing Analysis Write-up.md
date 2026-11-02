@@ -98,7 +98,11 @@ Good earnings from $6500 per day >>>>>>>>>> https://35000usdperwwekpodf.blogspot
 
 ```
 
-The contact form lacked basic anti-bot security controls (such as CAPTCHA or rate limiting). This vulnerability allowed the adversary to automate form submissions via a bot/script.
+There are 2 possibilities here:
+
+1. The contact form lacked basic anti-bot security controls (such as CAPTCHA or rate limiting). This vulnerability allowed the adversary to automate form submissions via a bot/script.
+
+2. The adversary manually interacted with the contact form and bypassed validation controls due to a lack of proper input sanitization. The PHP backend exhibited excessive trust in client-provided data, allowing malicious payloads (such as phishing links) to be processed and transmitted directly through the script without adequate filtering.
 
 Within the rendered message fields and attachments, the adversary injected spoofed sender metadata (aliased as *Robertbiolo*) along with a malicious phishing link intended for the target victim (`Kinnar1975@yahoo.co.uk`).
 
@@ -117,5 +121,6 @@ Within the rendered message fields and attachments, the adversary injected spoof
 | **Execution** | `T1059.006` | Command and Scripting Interpreter: Python / PHP | Server executing the unvalidated `X-PHP-Script` upon HTTP request submission. |
 | **Resource Development**| `T1586.002` | Compromised Accounts: Email Accounts | Utilizing compromised web infrastructure/mail submission endpoints to dispatch phishing links. |
 | **Reconnaissance / Bot Activity** | `T1595` | Active Scanning / Automated Submission | Bot/Automated script bypassing missing CAPTCHA controls to submit malicious payloads via HTTP POST. |
+| **Reconnaissance** | `T1592` | Gather Victim Org | The adversary actively gathers administrative, operational, and technical details about the target organization.
 
 Thank you.
