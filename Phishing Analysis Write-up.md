@@ -72,4 +72,12 @@ Displayed right after the URL.
 ### Question 9: Using URL2PNG, what is the heading text on this page? (Doesn't matter if the page has been taken down!)
 **Answer:** `Blog has been removed`
 
-## Chain Attack Explanation
+## Attack chain analysis
+
+To understand what actually happened in this case, let's look at the underlying attack chain:
+
+#### 1. Initial access
+- The adversary successfully compromised the blog hosting service website named `markgardner.com`
+- Abusing contact form, leveraging the compromised site, the adversary utilized it's online contact form.
+
+What evidence support this findings?
